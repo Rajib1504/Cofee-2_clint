@@ -23,7 +23,7 @@ const Users = () => {
         //     icon: "success",
         //   });
         //     delete from database
-        fetch(`http://localhost:3000/users/${id}`, {
+        fetch(`https://coffee-store-server-rho-nine.vercel.app/users/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

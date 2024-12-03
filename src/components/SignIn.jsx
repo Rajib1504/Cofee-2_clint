@@ -17,7 +17,7 @@ const SignIn = () => {
         // last login time updating
         const lastLogIn = result.user.metadata?.lastSignInTime;
         const loginInfo = { email, lastSignInTime: lastLogIn }; // why email because we dont have here id so we can find it by another that can be anything wich is avalible in variable
-        fetch("http://localhost:3000/users", {
+        fetch("https://coffee-store-server-rho-nine.vercel.app/users", {
           method: "PATCH",
           headers: {
             "Content-Type": "application/json",
